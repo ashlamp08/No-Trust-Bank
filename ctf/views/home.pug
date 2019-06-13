@@ -1,0 +1,66 @@
+doctype html
+head
+  title No Trust Bank
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+  style.
+    .fakeimg {
+    height: 200px;
+    background: #aaa;
+    }
+.jumbotron.text-center(style=`background: url('/images/notrustbank.jpeg') bottom center
+        no-repeat; background-size: cover; color: white; margin-bottom:0`)
+  h1 No Trust Bank
+  p A bank with all solutions
+
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+  a.navbar-brand(href='home') Home
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+    span.navbar-toggler-icon
+  #collapsibleNavbar.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link(href='aboutus') About Us
+      li.nav-item
+        a.nav-link(href='login') Login
+      li.nav-item
+        a.nav-link(href='#') Contact Us
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        if(user)
+          i.far.fa-user(style='font-size:24px; color:white')   #{user}
+        
+.container(style='margin-top:30px')
+  .row
+    .col-sm-4
+      h2 What's new?
+      h5 Fixed Deposit at 10%
+      .fakeimg(style=`background: url('/images/fdrates.png') top center
+        no-repeat; background-size: cover; color: white`)
+      p We will be providing 10% interest rate at FD
+    .col-sm-8
+      h2 Stay Connect Digitally
+      h5 We have many ways to transact digitally.
+      .fakeimg(style=`background: url('/images/digitaltransaction.png') top center
+        no-repeat; background-size: cover; color: white`)
+  .row
+    .com-sm-4
+      h3 Our Services
+      p Find Service of your interest.
+      ul.nav.nav-pills.flex-column
+        li.nav-item
+          a.nav-link.active(href='#') Personal Loan
+        li.nav-item
+          a.nav-link(href='#') Forex Card
+        li.nav-item
+          a.nav-link(href='#') Demat Account
+        li.nav-item
+          a.nav-link.disabled(href='#') E-Gift Card
+      hr.d-sm-none
+.jumbotron.text-center(style='margin-bottom:0')
+  p ALL MATERIAL ©2019 NO TRUST BANK. ALL RIGHTS RESERVED.

@@ -1,0 +1,46 @@
+doctype html
+head
+  title Bootstrap Example
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='stylesheets/style.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+//-   style.
+//-     .person-image {
+//-     height: 200px;
+//-     background: #aaa;
+//-     }
+.jumbotron.text-center(style='margin-bottom:0')
+  h1 About The Bank
+  p Know about out bank and its history
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+  a.navbar-brand(href='home') Home
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+    span.navbar-toggler-icon
+  #collapsibleNavbar.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href='aboutus') About Us
+      li.nav-item
+        a.nav-link(href='login') Login
+      li.nav-item
+        a.nav-link(href='#') Contact Us
+div.container
+    each person in people
+      div.person
+        div.person-image(style=`background: url('/images/${person.imgSrc}') top center
+        no-repeat; color: white`)
+        h2.person-name
+          | #{person.firstname} #{person.lastname}
+        p.b
+          | #{person.tagline}
+        p.b
+          | #{person.contact}
+        p
+          | #{person.bio}
+        if(person.id == "jeff")
+          a(href=`/aboutus/blog`)         
+            | View My Travel Blog

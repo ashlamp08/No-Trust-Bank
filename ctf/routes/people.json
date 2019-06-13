@@ -1,0 +1,37 @@
+{
+    "profiles": [
+      {
+        "firstname": "Jeff",
+        "lastname": "Bez",
+        "bio":
+          "30 years experience in consumer banking sector.",
+        "tagline": "CEO",
+        "contact": "jeff.bez@ntbank.com",
+        "imgSrc": "profile.png",
+        "id": "jeff"
+      },
+  
+      {
+        "firstname": "Tina",
+        "lastname": "Foo",
+        "bio":
+          "Motivated finance visionary.",
+        "tagline": "CFO",
+        "contact": "tina.foo@ntbank.com",
+        "imgSrc": "profile.png",
+        "id": "tina"
+      },
+  
+      {
+        "firstname": "Virat",
+        "lastname": "Dhoni",
+        "bio":
+          "Designer with creativity. Degree from Bangalore School of Arts.",
+        "tagline": "Design Head",
+        "contact": "virat.dhoni@ntbank.com",
+        "imgSrc": "profile.png",
+        "id": "virat"
+      }
+    ]
+  }
+  
